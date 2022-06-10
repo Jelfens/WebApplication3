@@ -1,0 +1,26 @@
+﻿
+
+@using WebApplication3.Classes
+@model List<WebApplication3.Classes.Vehicle>
+<table class="table table-sm bordered">
+    @foreach(var v in Model)
+    {
+        <tr>Id:@v.Id</tr>
+        <br />
+        <tr>Name:@v.Name</tr>
+        <br />
+        <tr>Color:@v.Color</tr>
+        <br/>
+        @if(v is Car)
+        {
+          <tr>Headlight:@(((Car)v).HeadLight)</tr>
+        }
+        <br />
+        @if(v is Car)
+        {
+          <tr>Wheels:@(((Car)v).wheels)</tr>
+        }
+        <br />
+        <br />
+    }
+</table>
