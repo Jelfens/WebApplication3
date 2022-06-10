@@ -50,6 +50,7 @@ namespace WebApplication3.Controllers
         {
             return View(_vehicleOpServices.GetCar(vehicles, id));
         }
+
         [HttpGet("Bus/color/{Color}")]
         public IActionResult Index2(string Color)
         {
@@ -60,6 +61,7 @@ namespace WebApplication3.Controllers
             else
                 return null;
         }
+
         [HttpGet("Boat/color/{Color}")]
         public IActionResult Index3(string Color)
         {
@@ -70,6 +72,7 @@ namespace WebApplication3.Controllers
             else
                 return null;
         }
+
         [HttpPost]
         public void Post_hLOnOff([FromBody]int Id)
         {
@@ -77,6 +80,7 @@ namespace WebApplication3.Controllers
             _vehicleOpServices.hLOnOff(vehicles, Id);
           
         }
+
         [HttpDelete("{Id}")]
         public void delete_Vehicle(int Id)
         {

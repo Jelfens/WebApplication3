@@ -15,6 +15,7 @@ namespace WebApplication3.Services
 
             return vehicles;
         }
+
         public Vehicle? GetCar(List<Vehicle> vehicles,string s)
         {
             foreach (var v in vehicles)
@@ -25,6 +26,7 @@ namespace WebApplication3.Services
             }
             return null;
         }
+
         public Vehicle? GetCar(List<Vehicle> vehicles, int Id)
         {
             foreach (var v in vehicles)
@@ -35,6 +37,7 @@ namespace WebApplication3.Services
             }
             return null;
         }
+
         public Vehicle? GetBus(List<Vehicle> vehicles, string s)
         {
             foreach (var v in vehicles)
@@ -45,6 +48,7 @@ namespace WebApplication3.Services
             }
             return null;
         }
+
         public Vehicle? GetBoat(List<Vehicle> vehicles, string s)
         {
             foreach (var v in vehicles)
@@ -55,6 +59,7 @@ namespace WebApplication3.Services
             }
             return null;
         }
+
         public void hLOnOff(List<Vehicle> vehicles, int Id)
         {
             foreach(var vehicle in vehicles)
@@ -71,6 +76,7 @@ namespace WebApplication3.Services
                 }
             }
         }
+
         public void deleteVehicle(List<Vehicle> vehicles, int id)
         {
             for(int i = 0; i<vehicles.Count; i++)
